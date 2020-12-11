@@ -14,6 +14,20 @@ if(!Expression.test(name)){
    }
 ```
 
+## Expression To check Password
+>Conditions:
+* Required Number, Uppercase, Lowercase & Special char
+* Lenth should be 6 to 15 
+
+```sh
+Expression = /^(?=.*[0-9])(?=(?:[^A-Z]*[A-Z]){1})(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,15}$/
+
+Check:
+if(!Expression.test(password)){
+      alert("invalid password")
+   }
+```
+
 ## Expression To check Email
 >Conditions:
 * Required Special Char: @ . 
