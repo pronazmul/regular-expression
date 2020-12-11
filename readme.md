@@ -17,7 +17,7 @@ if(!Expression.test(name)){
 ## Expression To check Password
 >Conditions:
 * Required Number, Uppercase, Lowercase & Special char
-* Lenth should be 6 to 15 
+* Length Must be 6 to 15 
 
 ```sh
 Expression = /^(?=.*[0-9])(?=(?:[^A-Z]*[A-Z]){1})(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,15}$/
@@ -39,5 +39,18 @@ Expression = /\S+@\S+\.\S+/
 Check:
 if(!Expression.test(email)){
       alert("invalid email")
+   }
+```
+## Expression To check Number & Set Number Range
+>Conditions:
+* Required only number
+* Length Must be 2 to 12
+
+```sh
+Expression = /^([0-9 ]){2,12}$/
+
+Check:
+if(!Expression.test(number)){
+      alert("invalid Number")
    }
 ```
