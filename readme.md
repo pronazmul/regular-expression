@@ -1,4 +1,4 @@
-<p align="center"><a href="http://pronazmul.com" target="_blank"><img src="https://i.ibb.co/BZcrznf/featured.png" width="300"></a></p>
+<p align="center"><a href="http://pronazmul.com" target="_blank"><img src="https://i.ibb.co/BZcrznf/featured.png" width="600"></a></p>
 
 ## Expression To check Name
 >Conditions:
@@ -9,7 +9,21 @@
 Expression = /^([a-zA-Z ]){5,20}$/
 
 Check:
-if(!Expression.test(data)){
-      alert("invalid Data")
+if(!Expression.test(name)){
+      alert("invalid Name")
+   }
+```
+
+## Expression To check Email
+>Conditions:
+* Required Special Char: @ . 
+* Required tex@text.text
+
+```sh
+Expression = /\S+@\S+\.\S+/
+
+Check:
+if(!Expression.test(email)){
+      alert("invalid email")
    }
 ```
