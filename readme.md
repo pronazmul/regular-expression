@@ -41,16 +41,30 @@ if(!Expression.test(email)){
       alert("invalid email")
    }
 ```
-## Expression To check Number & Set Number Range
+## Expression To Validate Image Extention
 >Conditions:
 * Required only number
 * Length Must be 2 to 12
 
 ```sh
-Expression = /^([0-9 ]){2,12}$/
+Expression = /\.(jpg|jpeg|png|gif)$/
 
 Check:
-if(!Expression.test(number)){
-      alert("invalid Number")
+if(!Expression.test(Image_Extension)){
+      alert("invalid Image")
+   }
+```
+
+## Expression To check Number & Set Number Range
+>Conditions:
+* Firstly Separate Image Extension.
+* Chek Image Extention jpg, jpeg, png, gif.
+
+```sh
+Expression = /\.(jpg|jpeg|png|gif)$/
+
+Check:
+if(!Expression.test(Image_Extension)){
+      alert("invalid Image")
    }
 ```
