@@ -3,7 +3,7 @@
 ## Expression To check Name
 >Conditions:
 * Only Uppercase, LowerCase & Spaces Are allowed
-* Length Should be between 5 to 20
+* Length Should be between 5 to 20 
 
 ```sh 
 Expression = /^([a-zA-Z ]){5,20}$/
